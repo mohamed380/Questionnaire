@@ -110,7 +110,10 @@ export default class question {
 
     canSubmit() {
         // || !this.mandatory 
-        return this.localAnswer !== undefined ;
+        if (this.type == QTypes.Checkbox) {
+            return Boolean(this.localAnswer?.length)
+        }
+       return ![undefined, null, ''].includes(this.localAnswer);
     }
 
     private handleCheckBoxSetAnswer(answer: answer) {
@@ -137,7 +140,7 @@ export default class question {
         }
     }
 
-    hasPostAnswer(){
+    hasPostAnswer() {
         return Boolean(this.post_answer_banner_url_full || this.post_answer_banner_url_small || this.post_answer_text);
     }
 }
