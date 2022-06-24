@@ -4,8 +4,7 @@ import router from './router'
 import { store } from './store'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'jquery'
-import 'bootstrap/dist/js/bootstrap.min.js'
-import 'bootstrap/dist/js/bootstrap.bundle.js'
+import "bootstrap"
 import 'material-icons/iconfont/material-icons.css';
 
 const app = createApp(App)

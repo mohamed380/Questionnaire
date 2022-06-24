@@ -13,8 +13,9 @@ export class userService {
         return data ? new user(data) : null;
     }
 
-    static async createDummy(): Promise<IUserResponse> {
-        return await axios.post(apis.CREATE_DUMMY, { bearer_token: import.meta.env.VITE_MAIN_TOKEN })
+    static async createDummy() {
+        // import.meta.env.VITE_MAIN_TOKEN
+        return await axios.post(apis.CREATE_DUMMY, { bearer_token: null })
     }
 
     static save(authUser: user): void {
