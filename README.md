@@ -1,6 +1,6 @@
 # Questionnaire
 
-Allows users to take a survey.
+Challenge project for BewegenWerkt - A Questionnaire and survey tool. Allows users to take a survey.
 
 ## Project Setup
 
@@ -11,21 +11,33 @@ copy .env.example file and create .env file
 ## Dependencies
 - Node verion 16.15.0
 - NPM verion 8.5.5
+- Git
 
-```
-npm install
-```
+# How to Setup the Project
 
-### Compile and Hot-Reload for Development
+1. Clone the source code
+`git clone git@git.easternenterprise.com:js/challenge-bewegenwerkt.git`
 
-```
-npm run dev
-```
+OR download the zip folder of source code and extract
 
-### Type-Check, Compile and Minify for Production
+2. Install the dependencies from root folder
+`npm install`
 
-```
-npm run build
-```
+3. Run the project locally 
 
- `The built files can be found in /dist folder`
+    Compile and Hot-Reload for Development
+
+     ```
+       npm run dev
+      ```
+       This will start the project on your browser.
+
+   Type-Check, Compile and Minify for Production
+
+     ```
+     npm run build
+     ```
+
+    `The built files can be found in /dist folder`.
+    
+    Files in /dist folder should be served over an http server.
