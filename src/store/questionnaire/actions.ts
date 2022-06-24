@@ -84,7 +84,6 @@ export const questionnaireActions: ActionTree<IQuestionnaireState, IRootState> =
                         return
                     }
                     commit('QFINISHD');
-                    commit('TOGGLE_SUBMITTING');
                     return
                 }
 
