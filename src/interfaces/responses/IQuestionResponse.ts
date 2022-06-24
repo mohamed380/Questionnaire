@@ -1,0 +1,41 @@
+import type IAnswerResponse from "./IAnswerResponse";
+
+export default interface IQuestionResponse {
+    type: string;
+    title: string;
+    banner_url_full: string;
+    banner_url_small: string;
+    pre_question_text?: string;
+    question: string;
+    explanation?: string;
+    post_question_text?: string;
+    post_answer_banner_url_full: string;
+    post_answer_banner_url_small: string;
+    post_answer_text: string;
+    default_value?: string;
+    mandatory: boolean;
+    min?: number;
+    min_errmsg?: string;
+    max?: number;
+    max_errmsg?: string;
+    step?: number;
+    digits?: number;
+    digits_errmsg?: number;
+    validator?: string;
+    validator_errmsg?: string;
+    min_answers?: number;
+    min_answers_errmsg?: string;
+    max_answers?: number;
+    max_answers_errmsg?: string;
+    tens_question_code?: any;
+    questionnaire_id: number;
+    question_id: number;
+    next_question_id: number;
+    name: string;
+    description?: string;
+    answer: any;
+    answers?: IAnswerResponse[];
+    error_msg?: string;
+    index_number: number;
+    number_of_questions: number;
+}

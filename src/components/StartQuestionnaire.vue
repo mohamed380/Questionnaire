@@ -1,7 +1,7 @@
 <template>
   <button
     :disabled="isDisabled"
-    @click="intializeQuestionnaire"
+    @click="$router.push('questionnaire');"
     type="button"
     class="btn btn-success"
   >
@@ -17,13 +17,12 @@ import { defineComponent } from "vue";
 import { mapActions } from "vuex";
 export default defineComponent({
   name: "StartQuestionnaire",
-  props:{
+  props: {
     isDisabled: {
       required: true,
-      type: Boolean
-    }
+      type: Boolean,
+    },
   },
-  methods: { ...mapActions(["intializeQuestionnaire"]) },
 });
 </script>
 
