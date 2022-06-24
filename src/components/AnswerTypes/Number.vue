@@ -3,7 +3,7 @@
     <div class="col-12 col-md-8">
       <input
         :value="localAnswer"
-        @keyup="updateAnswer"
+        @change="updateAnswer"
         type="number"
         class="form-control"
         aria-describedby="addon-wrapping"
