@@ -16,7 +16,7 @@ copy .env.example file and create .env file
 # How to Setup the Project
 
 1. Clone the source code
-`git clone git@git.easternenterprise.com:js/challenge-bewegenwerkt.git`
+`git clone git@github.com:mohamed380/Questionnaire.git`
 
 OR download the zip folder of source code and extract
 
