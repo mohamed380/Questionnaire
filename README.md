@@ -1,6 +1,6 @@
 # Questionnaire
 
-Challenge project for BewegenWerkt - A Questionnaire and survey tool. Allows users to take a survey.
+A Questionnaire and survey tool. Allows users to take a survey.
 
 ## Project Setup
 
